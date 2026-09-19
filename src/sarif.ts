@@ -1,0 +1,2 @@
+import {Finding} from "./types";
+export function findingsToSarif(file:string,findings:Finding[]){return {version:"2.1.0","$schema":"https://json.schemastore.org/sarif-2.1.0.json",runs:[{tool:{driver:{name:"SAYANOX DevTools",version:"0.2.0"}},results:findings.map(f=>({ruleId:f.rule,level:f.severity==="error"?"error":f.severity==="warning"?"warning":"note",message:{text:f.message},locations:[{physicalLocation:{artifactLocation:{uri:file},region:{startLine:f.line,startColumn:f.column??1}}}]}))}]}}
