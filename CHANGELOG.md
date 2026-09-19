@@ -1,10 +1,10 @@
 # Changelog
-
+## 0.3.0
+- Interactive dashboard
+- Quick-fix code actions
+- Improved diagnostics workflow
+- Updated extension commands and metadata
 ## 0.2.0
-- Added reusable rules engine
-- Added SARIF conversion
-- Improved workspace health scanning
-- Added stronger local-first architecture
-
+- Rules engine and SARIF support
 ## 0.1.0
 - Initial release
